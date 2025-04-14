@@ -1,0 +1,52 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.4.3",
+	"FriendlyName": "PICOLivePreview",
+	"Description": "Provides real-time preview of PICO devices",
+	"Category": "Virtual Reality",
+	"CreatedBy": "PICO Technology Co., Ltd",
+	"CreatedByURL": "https://www.picoxr.com/",
+	"DocsURL": "https://developer-global.pico-interactive.com/document/ue4",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.4.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "PICOXRDPInput",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "PICOXRDPHMD",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "PICOXRDPEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "XRBase",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		}
+	]
+}
